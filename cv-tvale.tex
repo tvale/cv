@@ -1,0 +1,324 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Tiago Vale}{April 14, 1988}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:tiagomarquesvale@gmail.com}{tiagomarquesvale\mbox{}@\mbox{}gmail.com}\sbull
+\href{http://tvale.github.io}{tvale.github.io}
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+% \roottitle{Summary}  % a root section title
+%
+% \vspace{-1.3em}  % some vertical spacing
+% \begin{multicols}{2}  % open a multicolumn environment
+% \noindent \emph{Creative geek with roots in the open source movement, an entrepreneurial mindset and a passion for delivering value by developing maintainable software.}
+% \\
+% \\
+% At the age of seven (1989) Cies wrote his first lines of code in a \acr{LOGO}-like language on an \acr{MSX} (pre-\acr{PC}).  Two years later he attended a conference on an emerging new technology, the Internet, at the Erasmus University from which he would graduate 16 years later.
+%
+% After being introduced to the open source movement in 1997, he taught himself a variety of skills including system administration and programming (Bash, Python, Ruby \& \CPP).  By 2002 he got his pet project \acr{KT}urtle ---a zero-entry-barrier programming environment--- included into \acr{KDE}'s \emph{edu} module, and thereby almost every Linux distribution.
+%
+% From 2003 to 2007 he studied at the Erasmus University Rotterdam and graduated in \emph{Business and Computer Science} (one curriculum).  After graduation he travelled Europe and Asia during a two year sabbatical, on which he ``hustled'' several IT gigs (see experiences below) to extend the journey.
+% \end{multicols}
+%
+%
+% \spacedhrule{0em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Ph.D. in Computer Science}
+    {2012---present}
+    % {\bodytext{Focused on the economics of open source, rapid application development (\acr{RAD}) and the semantic web technology stack (\acr{RDF}/\acr{RDFS}, \acr{OWL} and \acr{SPARQL}).  Picked up quite some Java skills along the way.}}
+    {}
+}
+
+\headedsection
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {M.Sc. in Computer Science}
+    {2010---2012}
+    {\bodytext{Grade: 18 out of 20. \\
+    Dissertation: \href{http://hdl.handle.net/10362/8738}{A Modular Distributed Transactional Memory Framework}, graded 20 out of 20. \\
+    Noteworthy units include computer and network security, mobile and pervasive computing, middleware systems and technology, parallel and distributed computing, object-oriented software development, operating systems, database systems, TCP/IP networking, and multi-paradigm programming.}}
+}
+
+\headedsection
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {B.Sc. in Computer Science}
+    {206---2010}
+    {\bodytext{Grade: 15 out of 20. \\
+    Noteworthy units include computer architecture, databases, operating system fundamentals, programming languages' interpretation and compilation, logic programming, object-oriented programming, distributed systems, and logic systems.}}
+}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+
+\roottitle{Experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://research.microsoft.com/en-us/labs/cambridge/}{Microsoft Research}}
+  {\textsc{Cambridge, United Kingdom}} {%
+  \headedsubsection
+    {Research intern}
+    {2015}
+    {\bodytext{Internship in the context of the \href{http://research.microsoft.com/en-us/groups/camsys/default.aspx}{Systems and Networking} group, hosted by \href{http://research.microsoft.com/jump/48673}{Miguel Castro}. I worked on ~\href{http://research.microsoft.com/apps/pubs/default.aspx?id=255848}{FaRM}'s tolerance to whole-cluster failures using asynchronous, but consistent, replication between FaRM clusters. FaRM is a distributed computing platform that leverages emerging \href{https://en.wikipedia.org/wiki/Remote_direct_memory_access}{RDMA} technology to achieve high performance and low latency.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Teaching assistant}
+    {2013}
+    {\bodytext{Taught one lab class, held office hours, and participated in the organization of the Programming Languages and Environments unit (functional, imperative and object-oriented paradigms), from the B.Sc.\@ in Computer Science.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Teaching assistant}
+    {2012---2013}
+    {\bodytext{Taught one lab class, held office hours, and participated in the organization of the Introduction to Programming unit (using the C language), from the joint B.Sc./M.Sc.\@ in Biomedical Engineering.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Teaching assistant}
+    {2012}
+    {\bodytext{Taught one lab class and held office hours for the Introduction to Computers and Programming unit (using the Octave language), from the joint B.Sc./M.Sc.\@ in Environmental Engineering.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Undergraduate research assistant}
+    {2011}
+    {\bodytext{Title: An extensible STM framework with support for in-place metadata algorithms. \\
+    General bug fixing and devised and implemented a new array metadata solution. Wrote a technical report about the framework, describing the metadata class hierarchy and the Java bytecode injection performed by the framework, with examples.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Undergraduate research assistant}
+    {2010---2011}
+    {\bodytext{Title: Transactional Memory support in the JikesRVM virtual machine. \\
+    Investigated feasibility and performance benefits of adding a metadata object pointer to the Java objects' header, accessible at runtime through custom JVM API. Modified the \href{https://github.com/codehaus/mrp}{Metacircular Research Platform}'s source code and wrote a report explaining what was done and how.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Teaching assistant}
+    {2010---2011}
+    {\bodytext{Taught one lab class, office hours, and participated in the organization of the Introduction to Programming unit (using the C language), from the joint B.Sc./M.Sc.\@ in Micro and Nano Technology Engineering.}}
+}
+
+% \vspace{-0.2em}
+% \begin{center}
+%   \emph{\small Please refer to my \href{http://www.linkedin.com/in/ciesbreijs}{Linked-in profile} for a more complete list of work experiences along with recommendations.}
+% \end{center}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+
+\roottitle{Skills}
+
+% \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+%   {Technical expertise:}
+%   {Software design and implementation, with(in) a team.  Big fan of Agile methodologies (Scrum and Kanban), automated deployment (Capistrano) and continuous integration (Hudson/Jenkins).  Enjoys writing Ruby/\nsp Python/\nsp Java/\nsp \CPP, yet flirts regularly with Haskell.  Solid knowledge of web technologies:\ \acr{HTML+CSS}, \acr{XML}, \acr{RDF}, \acr{REST}, \acr{SOAP} and JavaScript (mostly Angular and jQuery).  Linux administration skills:\ Bash, Apache, My\acr{SQL}, Postgres\acr{SQL}, virtualization/cloud (Vagrant, Open\acr{VZ}, \acr{VM}ware, \acr{KVM}, Xen and \acr{EC}2), datacenter automation (Puppet and Chef).}
+
+% \vspace{0.5em}
+\inlineheadsection
+  {Languages:}
+  {Portuguese \emph{(mother tongue)}, and English \emph{(professional proficiency)}.}
+
+
+\spacedhrule{1.6em}{-0.4em}
+
+
+\roottitle{Scientific publications (peer-reviewed)}
+
+\headedsection
+  {Framework support for the efficient implementation of multiversion algorithms}
+  {\textsc{Book chapter}} {%
+  \headedsubsection
+    {@ Transactional Memory: Foundations, Algorithms, Tools, and Applications}
+    {2015}
+    {\bodytext{Ricardo Dias, Tiago Vale, and Jo\~{a}o Louren\c{c}o.}}
+}
+
+\headedsection
+  {Supporting multiple data replication models in distributed transactional memory}
+  {\textsc{Conference}} {%
+  \headedsubsection
+    {@ ICDCN}
+    {2015}
+    {\bodytext{Jo\~{a}o Silva, Tiago Vale, Ricardo Dias, Herv\'{e} Paulino, and Jo\~{a}o Louren\c{c}o.}}
+}
+
+\headedsection
+  {Execu\c{c}\~{a}o concorrente e determinista de transa\c{c}\~{o}es (portuguese)}
+  {\textsc{Conference}} {%
+  \headedsubsection
+    {@ INFORUM}
+    {2015}
+    {\bodytext{Tiago Vale, Jo\~{a}o Silva, Ricardo Dias, and Jo\~{a}o Louren\c{c}o.}}
+}
+
+\headedsection
+  {Efficient support for in-place metadata in Java software transactional memory}
+  {\textsc{Journal}} {%
+  \headedsubsection
+    {@ Concurrency and Computation: Practice and Experience}
+    {2013}
+    {\bodytext{Ricardo Dias, Tiago Vale, and Jo\~{a}o Louren\c{c}o.}}
+}
+
+\headedsection
+  {On the relevance of total-order broadcast implementations in replicated software transactional memories}
+  {\textsc{Conference}} {%
+  \headedsubsection
+    {@ MUSEPAT (now part of SAC)}
+    {2013}
+    {\bodytext{Tiago Vale, Ricardo Dias, and Jo\~{a}o Louren\c{c}o.}}
+}
+
+\headedsection
+  {Replica\c{c}\~{a}o parcial com mem\'{o}ria transacional distribu\'{i}da (portuguese)}
+  {\textsc{Conference}} {%
+  \headedsubsection
+    {@ INFORUM}
+    {2013}
+    {\bodytext{Jo\~{a}o Silva, Tiago Vale, Herv\'{e} Paulino, and Jo\~{a}o Louren\c{c}o.}}
+}
+
+\headedsection
+  {Efficient support for in-place metadata in transactional memory}
+  {\textsc{Conference}} {%
+  \headedsubsection
+    {@ Euro-Par}
+    {2012}
+    {\bodytext{Ricardo Dias, Tiago Vale, and Jo\~{a}o Louren\c{c}o. \\
+    \emph{Received a distinguished paper award.}}}
+}
+
+\headedsection
+  {Uma infraestrutura para suporte de mem\'{o}ria transacional distribu\'{i}da (portuguese)}
+  {\textsc{Conference}} {%
+  \headedsubsection
+    {@ INFORUM}
+    {2012}
+    {\bodytext{Tiago Vale, Ricardo Dias, and Jo\~{a}o Louren\c{c}o.}}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+
+\roottitle{Other}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Introduction to git and GitHub}
+    {2013, 2014}
+    {\bodytext{Gave an introductory workshop to \href{www.git-scm.com}{git} and \href{github.com}{github.com} at Jornadas Tecnol\'{o}gicas (Jortec). Jortec is a yearly event organised by Computer Science students featuring technological talks from startups, big enterprises, and workshops.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {ClubeMath}
+    {2012}
+    {\bodytext{Participated and helped in the organization of \href{http://eventos.fct.unl.pt/clubemath}{ClubeMath} at Universidade Nova de Lisboa. ClubeMath is a mathematics club destined to youngsters attending basic and secondary school. The club's activities strive to stimulate the interest in mathematics among students.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Freshmen support classes}
+    {2009}
+    {\bodytext{Co-organized and participated in informal, department-endorsed, freshmen support classes. Me and other senior students gathered in a department-provided lab to provide more continuous and personal help in programming and introductory Computer Science courses, during the 1\textsuperscript{st} semester of 2009/10.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://www.dcc.fc.up.pt}{Universidade do Porto}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Finalist of Olimp\'{i}adas Nacionais de Inform\'{a}tica}
+    {2006}
+    {\bodytext{Finalist of \href{http://www.dcc.fc.up.pt/oni/2006/}{Olimp\'{i}adas Nacionais de Inform\'{a}tica}, a programming contest between secondary school students.}}
+}
+
+% \vspace{-0.2em}
+% \begin{center}
+%   \emph{\small Please refer to my \href{http://www.linkedin.com/in/ciesbreijs}{Linked-in profile} for a more complete list of work experiences along with recommendations.}
+% \end{center}
+
+
+% \spacedhrule{0.5em}{-0.4em}
+
+% \roottitle{Interests}
+%
+% \inlineheadsection
+%   {Non-exhaustive and in alphabetical order:}
+%   {art, Buddhism, cryptography, Go (board game), history, music, open source, philosophy, software engineering (methodologies), travel, typography (e.g.\ graphic design, \LaTeX), \acr{UI}/\acr{UX}-design and vegetarian/vegan cooking.}
+
+
+\end{document}

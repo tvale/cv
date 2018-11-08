@@ -62,6 +62,20 @@
 %
 % \spacedhrule{0em}{-0.4em}
 
+\roottitle{Current position}
+
+\headedsection
+  {\href{https://oracle.com}{MySQL, Oracle}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Software Engineer }
+    {November 2017---present}
+    {}
+}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
 \roottitle{Education}
 
 \headedsection
@@ -99,16 +113,43 @@
 \spacedhrule{0.5em}{-0.4em}
 
 
-\roottitle{Experience}
+\roottitle{Public projects}
 
 \headedsection  % sets the header for the section and includes any subsections
-  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
-  {\textsc{Portugal}} {%
-  \headedsubsection
-    {Teaching assistant}
-    {2016}
-    {\bodytext{Taught one lab class, held office hours, and participated in the organization of the Informatics for Science and Engineering unit (using the Octave language), from the joint B.Sc./M.Sc.\@ in Chemical and Biochemical Engineering.}}
+  {\href{https://github.com/tvale/git-vss}{git-vss}}
+  {\href{https://github.com/tvale/git-vss}{github.com/tvale/git-vss}} {%
+  \bodytext{
+    A Python script for Windows to synchronise a \href{https://en.wikipedia.org/wiki/Microsoft_Visual_SourceSafe}{Microsoft Visual Source Safe} project with a \href{https://git-scm.org}{git} branch.
+	This was done for Opensoft, a Portuguese company responsible for high profile applications such as \href{http://www.opensoft.pt/case_study/irs}{Declara\c{c}\~{a}o Modelo 3 de IRS} and \href{http://www.opensoft.pt/case_study/portalfinancas/}{Portal das Finan\c{c}as}.
+  }
 }
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/jaasilva/ReDstm}{ReDstm}}
+  {\href{https://github.com/jaasilva/ReDstm}{github.com/jaasilva/ReDstm}} {%
+  \bodytext{
+    A \href{https://en.wikipedia.org/wiki/Distributed_shared_memory}{Distributed Shared Memory} runtime for the \href{https://en.wikipedia.org/wiki/Java_(programming_language)}{Java} programming language.
+	The distributed shared memory is manipulated using transactions. (Put simply, it's a distributed version of TribuSTM.)
+	It started as my M.Sc.\@ dissertation's prototype and was later extended by \href{https://sites.google.com/campus.fct.unl.pt/jaasilva/}{Jo\~{a}o Silva} to incorporate his M.Sc.\@ dissertation's ideas.
+  }
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/tvale/TribuSTM}{TribuSTM}}
+  {\href{https://github.com/tvale/TribuSTM}{github.com/tvale/TribuSTM}} {%
+  \bodytext{
+    A \href{https://en.wikipedia.org/wiki/Software_transactional_memory}{Software Transactional Memory} runtime for the \href{https://en.wikipedia.org/wiki/Java_(programming_language)}{Java} programming language.
+	It has a modular architecture that allows to interchange different STM protocols.
+	It requires minimal source code modification to be used: it rewrites the application's bytecode to transparently insert calls to the runtime where applicable.
+	I worked on this project during an undergraduate research scholarship and my M.Sc. dissertation.
+  }
+}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+
+\roottitle{Research experience}
 
 \headedsection  % sets the header for the section and includes any subsections
   {\href{http://research.microsoft.com/en-us/labs/cambridge/}{Microsoft Research}}
@@ -117,6 +158,50 @@
     {Research intern}
     {2015}
     {\bodytext{Internship in the context of the \href{http://research.microsoft.com/en-us/groups/camsys/default.aspx}{Systems and Networking} group, hosted by \href{http://research.microsoft.com/jump/48673}{Miguel Castro}. I worked on ~\href{http://research.microsoft.com/apps/pubs/default.aspx?id=255848}{FaRM}'s tolerance to whole-cluster failures using asynchronous, but consistent, replication between FaRM clusters. FaRM is a distributed computing platform that leverages emerging \href{https://en.wikipedia.org/wiki/Remote_direct_memory_access}{RDMA} technology to achieve high performance and low latency.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Undergraduate research assistant}
+    {2011}
+    {\bodytext{Title: An extensible STM framework with support for in-place metadata algorithms. \\
+    General bug fixing and devised and implemented a new array metadata solution. Wrote a technical report about the framework, describing the metadata class hierarchy and the Java bytecode injection performed by the framework, with examples.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Undergraduate research assistant}
+    {2010---2011}
+    {\bodytext{Title: Transactional Memory support in the JikesRVM virtual machine. \\
+    Investigated feasibility and performance benefits of adding a metadata object pointer to the Java objects' header, accessible at runtime through custom JVM API. Modified the \href{https://github.com/codehaus/mrp}{Metacircular Research Platform}'s source code and wrote a report explaining what was done and how.}}
+}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+
+\roottitle{Teaching experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Teaching assistant}
+    {2017}
+    {\bodytext{Taught one lab class, held office hours, and participated in the organization of the Object-oriented Programming unit (using the Java language), from the joint B.Sc./M.Sc.\@ in Computer Science.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
+  {\textsc{Portugal}} {%
+  \headedsubsection
+    {Teaching assistant}
+    {2016}
+    {\bodytext{Taught one lab class, held office hours, and participated in the organization of the Informatics for Science and Engineering unit (using the Octave language), from the joint B.Sc./M.Sc.\@ in Chemical and Biochemical Engineering.}}
 }
 
 \headedsection  % sets the header for the section and includes any subsections
@@ -144,26 +229,6 @@
     {Teaching assistant}
     {2012}
     {\bodytext{Taught one lab class and held office hours for the Introduction to Computers and Programming unit (using the Octave language), from the joint B.Sc./M.Sc.\@ in Environmental Engineering.}}
-}
-
-\headedsection  % sets the header for the section and includes any subsections
-  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
-  {\textsc{Portugal}} {%
-  \headedsubsection
-    {Undergraduate research assistant}
-    {2011}
-    {\bodytext{Title: An extensible STM framework with support for in-place metadata algorithms. \\
-    General bug fixing and devised and implemented a new array metadata solution. Wrote a technical report about the framework, describing the metadata class hierarchy and the Java bytecode injection performed by the framework, with examples.}}
-}
-
-\headedsection  % sets the header for the section and includes any subsections
-  {\href{http://fct.unl.pt}{Universidade Nova de Lisboa}}
-  {\textsc{Portugal}} {%
-  \headedsubsection
-    {Undergraduate research assistant}
-    {2010---2011}
-    {\bodytext{Title: Transactional Memory support in the JikesRVM virtual machine. \\
-    Investigated feasibility and performance benefits of adding a metadata object pointer to the Java objects' header, accessible at runtime through custom JVM API. Modified the \href{https://github.com/codehaus/mrp}{Metacircular Research Platform}'s source code and wrote a report explaining what was done and how.}}
 }
 
 \headedsection  % sets the header for the section and includes any subsections
@@ -312,7 +377,7 @@
   \headedsubsection
     {Introduction to git}
     {2013}
-    {\bodytext{Gave a talk introducing \href{www.git-scm.com}{git} and its benefits at Opensoft, a Portuguese company responsible for high profile applications such as \href{http://www.opensoft.pt/case_study/irs}{Declara\c{c}\~{a}o Modelo 3 de IRS} and \href{http://www.opensoft.pt/case_study/portalfinancas/}{Portal das Finan\c{c}as}.}}
+    {\bodytext{Gave a talk introducing \href{www.git-scm.com}{git}, \href{https://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/}{git-flow}, and their benefits at Opensoft, a Portuguese company responsible for high profile applications such as \href{http://www.opensoft.pt/case_study/irs}{Declara\c{c}\~{a}o Modelo 3 de IRS} and \href{http://www.opensoft.pt/case_study/portalfinancas/}{Portal das Finan\c{c}as}.}}
 }
 
 \headedsection  % sets the header for the section and includes any subsections
